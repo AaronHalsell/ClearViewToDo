@@ -1,0 +1,150 @@
+@import "_variables.scss";
+@import "_lists.scss";
+@import "_tasks.scss";
+
+* {
+    border-radius: 0 !important;
+  }
+
+body, nav i, .navbar-brand {
+    color: $font-color;
+}
+
+body {
+    background-color: $primary-bg-color;
+}
+
+$baseBorderRadius: 0;
+
+.navbar {
+    background-color: $primary-highlight;
+    color: $btn-font-color;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.dropdown {
+    margin-right: 50px;
+}
+
+.dropdown li {
+    background-color: $primary-bg-color;
+}
+
+.btn, .badge {
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.blue-mode .btn, blue-mode .badge {
+    background-color: $btn-primary;
+    color: $btn-font-color;
+}
+
+.btn:hover {
+    position: relative;
+    bottom: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.blue-mode .btn:hover {
+    background-color: $btn-secondary !important;
+    color: $btn-font-color !important;
+}
+
+.col-left {
+    height: 94vh;
+    background-color: $secondary-bg-color;
+}
+
+
+.active {
+    background-color: $secondary-highlight;
+}
+
+.listTest {
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}
+
+.hidden {
+    display: none;
+}
+
+////////////////
+// DARK MODE ///
+////////////////
+
+
+.dark-mode {
+    background-color: $drk-primary-bg-color;
+}
+
+.dark-mode .navbar {
+    background-color: $drk-primary-highlight;
+    color: $white;
+}
+
+.dark-mode .btn, dark-mode .badge {
+    background-color: $drk-btn-primary;
+    color: $drk-primary-bg-color;
+}
+
+.dark-mode .btn:hover {
+    background-color: $drk-btn-secondary !important;
+    color: $white!important;
+}
+
+.dark-mode .col-left {
+    height: 94vh;
+    background-color: $drk-secondary-bg-color;
+}
+
+
+.dark-mode .active {
+    background-color: $drk-secondary-highlight;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: $drk-secondary-bg-color;
+}
+
+.dark-mode .dropdown li {
+    background-color: $drk-secondary-bg-color;
+    color: $white;
+}
+
+.dark-mode .dropdown li a {
+    color: $primary-bg-color; 
+}
+
+.dark-mode .dropdown li a:hover {
+    background-color: $drk-primary-bg-color; 
+}
+
+////////////////
+/// RED MODE ///
+////////////////
+
+.red-mode .navbar {
+    background-color: $red-primary-highlight;
+}
+
+.red-mode .btn, red-mode .badge {
+    background-color: $red-btn-primary;
+    color: $white !important;
+}
+
+.red-mode .btn:hover {
+    background-color: $red-btn-secondary !important;
+    color: $white !important;
+}
+
+.red-mode .col-left {
+    background-color: $red-secondary-bg-color;
+}
+
+
+.red-mode .active {
+    background-color: $red-secondary-highlight;
+}
