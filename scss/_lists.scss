@@ -12,9 +12,9 @@ input, li, .list-group-item, .form-control {
     transition: width 1s ease;
 }
 
-.list-form {
-    background-color: $primary-bg-color;
-    border-bottom:rgba(184, 45, 40, 0.3) 1px solid;
+.list-form, #taskInput {
+    background-color: transparent;
+    border-bottom:rgba(0, 29, 155, 0.3) 2px solid;
 
 }
 
@@ -27,7 +27,7 @@ input, li, .list-group-item, .form-control {
     margin-right: 15px;
 }
 
-.form-control:focus {
+.form-control:focus, #taskInput:focus {
     color: $font-color;
     border-bottom: $secondary-highlight 2px solid;
     box-shadow: none;
@@ -67,7 +67,7 @@ input, li, .list-group-item, .form-control {
 }
 
 .listDelete, .bi-trash {
-    color: $secondary-highlight;
+    color: $primary-bg-color;
 }
 
 .bi-trash, .bi-save2, .bi-pen {
@@ -75,8 +75,7 @@ input, li, .list-group-item, .form-control {
 }
 
 .bi-trash:hover {
-    color: $font-color;
-    background-color: $secondary-highlight;
+    background-color: #B60E23;
 }
 
 
@@ -99,12 +98,12 @@ input, li, .list-group-item, .form-control {
     background-color: $drk-secondary-bg-color;
 }
 
-.dark-mode .form-control:focus {
+.dark-mode .form-control:focus, .dark-mode #taskInput:focus {
     border-bottom: $drk-btn-primary 2px solid;
 }
 
 .dark-mode .form-control::placeholder {
-    color: $white;
+    color: $primary-bg-color;
 }
 
 .dark-mode .list-group-item.active {
@@ -118,14 +117,13 @@ input, li, .list-group-item, .form-control {
 }
 
 .dark-mode .listDelete, .dark-mode .bi-trash {
-    color: $drk-secondary-highlight;
+    color: $primary-bg-color;
 }
 
-.dark-mode .bi-trash:hover {
-    color: $font-color;
-    background-color: $secondary-highlight;
+.dark-mode .list-form, .dark-mode #taskInput {
+    background-color: transparent;
+    border-bottom:rgba(104, 32, 117, 0.3) 2px solid;
 }
-
 
 ////////////////
 /// RED MODE ///

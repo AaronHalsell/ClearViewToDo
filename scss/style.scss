@@ -82,17 +82,17 @@ $baseBorderRadius: 0;
 
 .dark-mode .navbar {
     background-color: $drk-primary-highlight;
-    color: $white;
+    color: $primary-bg-color;
 }
 
 .dark-mode .btn, dark-mode .badge {
     background-color: $drk-btn-primary;
-    color: $drk-primary-bg-color;
+    color: $primary-bg-color;
 }
 
 .dark-mode .btn:hover {
     background-color: $drk-btn-secondary !important;
-    color: $white!important;
+    color: $primary-bg-color !important;
 }
 
 .dark-mode .col-left {
@@ -111,7 +111,7 @@ $baseBorderRadius: 0;
 
 .dark-mode .dropdown li {
     background-color: $drk-secondary-bg-color;
-    color: $white;
+    color: $primary-bg-color;
 }
 
 .dark-mode .dropdown li a {

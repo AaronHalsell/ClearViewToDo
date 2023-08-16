@@ -28,13 +28,12 @@
 }
 
 .bi-save2:hover, .bi-pen:hover {
-    background-color: $btn-font-color;
-    color: $secondary-bg-color;
+    background-color: $btn-primary;
 }
 
-.form-check-input:checked {
-    background-color: $secondary-highlight;
-    border-color: $secondary-highlight;
+.blue-mode .form-check-input:checked {
+    background-color: $btn-primary;
+    border-color: $btn-secondary;
 }
 
 [type="checkbox"]:checked + .taskName {
@@ -49,4 +48,27 @@
 
 #taskClear {
     margin-top: 15px;
+}
+
+
+/////////////////
+/// Dark Mode ///
+/////////////////
+
+
+.dark-mode .form-check-input:checked {
+    background-color: $drk-btn-primary;
+    border-color: $drk-btn-secondary;
+}
+
+.dark-mode .form-check-input:active {
+    border-color: $drk-btn-primary;
+}
+
+.dark-mode .bi-save2:hover, .dark-mode .bi-pen:hover {
+    background-color: $drk-btn-primary;
+}
+
+.dark-mode h1 {
+    color: $primary-bg-color;
 }

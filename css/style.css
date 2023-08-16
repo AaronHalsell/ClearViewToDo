@@ -10,9 +10,9 @@ input, li, .list-group-item, .form-control {
   transition: width 1s ease;
 }
 
-.list-form {
-  background-color: #fff;
-  border-bottom: rgba(184, 45, 40, 0.3) 1px solid;
+.list-form, #taskInput {
+  background-color: transparent;
+  border-bottom: rgba(0, 29, 155, 0.3) 2px solid;
 }
 
 .list-form:focus {
@@ -23,7 +23,7 @@ input, li, .list-group-item, .form-control {
   margin-right: 15px;
 }
 
-.form-control:focus {
+.form-control:focus, #taskInput:focus {
   color: #3d404d;
   border-bottom: #2E6BAF 2px solid;
   box-shadow: none;
@@ -62,7 +62,7 @@ input, li, .list-group-item, .form-control {
 }
 
 .listDelete, .bi-trash {
-  color: #2E6BAF;
+  color: #fff;
 }
 
 .bi-trash, .bi-save2, .bi-pen {
@@ -70,12 +70,11 @@ input, li, .list-group-item, .form-control {
 }
 
 .bi-trash:hover {
-  color: #3d404d;
-  background-color: #2E6BAF;
+  background-color: #B60E23;
 }
 
 .dark-mode input, .dark-mode li, .dark-mode .list-group-item, .dark-mode .form-control {
-  background-color: #111111;
+  background-color: #171717;
   color: #fff;
 }
 
@@ -87,8 +86,8 @@ input, li, .list-group-item, .form-control {
   background-color: #35363A;
 }
 
-.dark-mode .form-control:focus {
-  border-bottom: #29DCCA 2px solid;
+.dark-mode .form-control:focus, .dark-mode #taskInput:focus {
+  border-bottom: #9A30AE 2px solid;
 }
 
 .dark-mode .form-control::placeholder {
@@ -96,22 +95,22 @@ input, li, .list-group-item, .form-control {
 }
 
 .dark-mode .list-group-item.active {
-  background-color: #111111;
+  background-color: #171717;
   border-color: #202124;
 }
 
 .dark-mode .col-left .list-group-item.active:hover {
-  background-color: #111111;
+  background-color: #171717;
   border-color: #202124;
 }
 
 .dark-mode .listDelete, .dark-mode .bi-trash {
-  color: #2D2D2D;
+  color: #fff;
 }
 
-.dark-mode .bi-trash:hover {
-  color: #3d404d;
-  background-color: #2E6BAF;
+.dark-mode .list-form, .dark-mode #taskInput {
+  background-color: transparent;
+  border-bottom: rgba(104, 32, 117, 0.3) 2px solid;
 }
 
 .red-mode input, .red-mode li, .red-mode .list-group-item, .red-mode .form-control {
@@ -164,13 +163,12 @@ input, li, .list-group-item, .form-control {
 }
 
 .bi-save2:hover, .bi-pen:hover {
-  background-color: #fff;
-  color: #DDEEF5;
+  background-color: #ED5725;
 }
 
-.form-check-input:checked {
-  background-color: #2E6BAF;
-  border-color: #2E6BAF;
+.blue-mode .form-check-input:checked {
+  background-color: #ED5725;
+  border-color: #C94A1F;
 }
 
 [type=checkbox]:checked + .taskName {
@@ -185,6 +183,23 @@ input, li, .list-group-item, .form-control {
 
 #taskClear {
   margin-top: 15px;
+}
+
+.dark-mode .form-check-input:checked {
+  background-color: #9A30AE;
+  border-color: #682075;
+}
+
+.dark-mode .form-check-input:active {
+  border-color: #9A30AE;
+}
+
+.dark-mode .bi-save2:hover, .dark-mode .bi-pen:hover {
+  background-color: #9A30AE;
+}
+
+.dark-mode h1 {
+  color: #fff;
 }
 
 * {
@@ -230,7 +245,7 @@ body {
 }
 
 .blue-mode .btn:hover {
-  background-color: #EB5023 !important;
+  background-color: #C94A1F !important;
   color: #fff !important;
 }
 
@@ -258,17 +273,17 @@ body {
 }
 
 .dark-mode .navbar {
-  background-color: #111111;
+  background-color: #171717;
   color: #fff;
 }
 
 .dark-mode .btn, dark-mode .badge {
-  background-color: #29DCCA;
-  color: #202124;
+  background-color: #9A30AE;
+  color: #fff;
 }
 
 .dark-mode .btn:hover {
-  background-color: #1C3231 !important;
+  background-color: #682075 !important;
   color: #fff !important;
 }
 
