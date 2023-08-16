@@ -114,36 +114,27 @@ input, li, .list-group-item, .form-control {
 }
 
 .red-mode input, .red-mode li, .red-mode .list-group-item, .red-mode .form-control {
-  background-color: #CD2C1A;
+  background-color: #D61029;
 }
 
 .red-mode .list-form:focus {
-  background-color: #EEE;
+  background-color: #F8F8F8;
 }
 
 .red-mode .form-control:focus {
-  border-bottom: #0073A6 2px solid;
+  border-bottom: #667279 2px solid;
 }
 
 .red-mode .list-group-item.active {
-  background-color: #CD2C1A;
+  background-color: #D61029;
 }
 
 .red-mode .col-left .list-group-item.active:hover {
-  background-color: #CD2C1A;
+  background-color: #D61029;
 }
 
 .dark-mode .bi-trash:hover {
   background-color: #B60E23;
-}
-
-.red-mode .list-form, .red-mode #taskInput {
-  background-color: transparent;
-  border-bottom: rgba(227, 25, 54, 0.3) 2px solid;
-}
-
-.red-mode .form-control:focus, .red-mode #taskInput:focus {
-  border-bottom: #CD2C1A 2px solid;
 }
 
 .task-form {
@@ -172,7 +163,7 @@ input, li, .list-group-item, .form-control {
 }
 
 .bi-save2:hover, .bi-pen:hover {
-  background-color: #2E6BAF;
+  background-color: #ED5725;
 }
 
 .blue-mode .form-check-input:checked {
@@ -207,38 +198,8 @@ input, li, .list-group-item, .form-control {
   background-color: #9A30AE;
 }
 
-.dark-mode .listTitle {
-  color: #fff;
-}
-
 .dark-mode h1 {
   color: #fff;
-}
-
-.red-mode .form-check-input:checked {
-  background-color: #0073A6;
-  border-color: #005880;
-}
-
-.red-mode .form-check-input:active {
-  border-color: #0073A6;
-}
-
-.red-mode .bi-save2:hover, .red-mode .bi-pen:hover {
-  background-color: #0073A6;
-}
-
-.red-mode .listTitle {
-  color: #fff;
-}
-
-.red-mode .form-check-input {
-  background-color: #fff;
-}
-
-.red-mode .bi-trash:hover {
-  background-color: #0073A6;
-  color: red;
 }
 
 * {
@@ -353,25 +314,27 @@ body {
 }
 
 .red-mode .navbar {
-  background-color: #CD2C1A;
+  background-color: #D61029;
 }
 
 .red-mode .btn, red-mode .badge {
-  background-color: #0073A6;
+  background-color: #667279;
   color: #fff !important;
 }
 
 .red-mode .btn:hover {
-  background-color: #005880 !important;
+  background-color: #3C4347 !important;
   color: #fff !important;
 }
 
 .red-mode .col-left {
-  background-color: #EEE;
+  background-color: #F8F8F8;
 }
 
 .red-mode .active {
   background-color: #B60E23;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

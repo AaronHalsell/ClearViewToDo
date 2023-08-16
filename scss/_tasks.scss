@@ -28,7 +28,7 @@
 }
 
 .bi-save2:hover, .bi-pen:hover {
-    background-color: $btn-primary;
+    background-color: $secondary-highlight;
 }
 
 .blue-mode .form-check-input:checked {
@@ -50,7 +50,6 @@
     margin-top: 15px;
 }
 
-
 /////////////////
 /// Dark Mode ///
 /////////////////
@@ -69,6 +68,40 @@
     background-color: $drk-btn-primary;
 }
 
+.dark-mode .listTitle {
+    color: $primary-bg-color
+}
+
 .dark-mode h1 {
     color: $primary-bg-color;
+}
+
+/////////////////
+/// Red Mode ////
+/////////////////
+
+.red-mode .form-check-input:checked {
+    background-color: $red-btn-primary;
+    border-color: $red-btn-secondary;
+}
+
+.red-mode .form-check-input:active {
+    border-color: $red-btn-primary;
+}
+
+.red-mode .bi-save2:hover, .red-mode .bi-pen:hover {
+    background-color: $red-btn-primary;
+}
+
+.red-mode .listTitle {
+    color: $primary-bg-color
+}
+
+.red-mode .form-check-input {
+    background-color: $primary-bg-color;
+}
+
+.red-mode .bi-trash:hover {
+    background-color: $red-btn-primary;
+    color: red;
 }

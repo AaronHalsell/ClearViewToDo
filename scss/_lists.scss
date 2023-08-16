@@ -154,3 +154,11 @@ input, li, .list-group-item, .form-control {
     background-color: $red-secondary-highlight;
 }
 
+.red-mode .list-form, .red-mode #taskInput {
+    background-color: transparent;
+    border-bottom:rgba(227, 25, 54, 0.3) 2px solid;
+}
+
+.red-mode .form-control:focus, .red-mode #taskInput:focus {
+    border-bottom: $red-primary-highlight 2px solid;
+}

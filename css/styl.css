@@ -1,0 +1,160 @@
+input, li, .list-group-item, .form-control {
+    background-color: #37456C;
+    color: #fff;
+    border: none;
+  }
+  
+  .list-group-item {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 20px;
+    transition: width 1s ease;
+  }
+  
+  .list-form {
+    background-color: #202536;
+    border-bottom: rgba(184, 45, 40, 0.3) 1px solid;
+  }
+  
+  .list-form:focus {
+    background-color: #202536;
+  }
+  
+  .form-control:focus {
+    color: #fff;
+    border-bottom: #B82D28 2px solid;
+    box-shadow: none;
+  }
+  
+  .form-control::placeholder {
+    color: #fff;
+  }
+  
+  .form-control:focus::placeholder {
+    color: transparent;
+  }
+  
+  .list-group-item.active {
+    background-color: #2C3B5C;
+    border-color: #2C3B5C;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  .listItem:hover {
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    bottom: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .col-left .list-group-item.active:hover {
+    cursor: pointer;
+    bottom: 3px;
+    bottom: 0;
+    background-color: #2C3B5C;
+    border-color: #2C3B5C;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  .listDelete, .bi-trash {
+    color: #B82D28;
+  }
+  
+  .bi-trash, .bi-save2, .bi-pen {
+    padding: 5px 10px;
+  }
+  
+  .bi-trash:hover {
+    color: #fff;
+    background-color: #B82D28;
+  }
+  
+  .task-form {
+    background-color: #2C3B5C;
+    border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
+  }
+  
+  .task-form:focus {
+    background-color: #2C3B5C;
+  }
+  
+  .form-check-input {
+    background-color: #37456C;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .form-check-input:focus {
+    box-shadow: rgba(108, 27, 29, 0.3) 0px 0px 0px 3px;
+  }
+  
+  [type=checkbox]:hover, .bi-trash:hover, .bi-save2:hover, .bi-pen:hover {
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .bi-save2:hover, .bi-pen:hover {
+    background-color: #fff;
+    color: #202536;
+  }
+  
+  .form-check-input:checked {
+    background-color: #B82D28;
+    border-color: #B82D28;
+  }
+  
+  [type=checkbox]:checked + .taskName {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .list-group-item:has([type=checkbox]:checked) {
+    bottom: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  * {
+    border-radius: 0 !important;
+  }
+  
+  body, nav i, .navbar-brand {
+    color: #fff;
+  }
+  
+  body {
+    background-color: #2C3B5C;
+  }
+  
+  .navbar, .btn, .badge {
+    background-color: #6C1B1D;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+  .btn:hover {
+    position: relative;
+    bottom: 3px;
+    background-color: #6C1B1D !important;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .col-left {
+    height: 94vh;
+    background-color: #202536;
+  }
+  
+  .active {
+    background-color: #B82D28;
+  }
+  
+  .listTest {
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
