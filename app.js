@@ -2,12 +2,14 @@
     const listForm = document.querySelector("#new-list-form")
     const listInput = document.querySelector("#new-list-input")
     const listContainer = document.querySelector("#lists");
+    const leftColumn = document.querySelector('#leftColumn')
     const todoContainer = document.querySelector('#todoContainer')
     const listTitle = document.querySelector('#listTitle')
     const taskContainer = document.querySelector('#tasks')
     const taskForm = document.querySelector('#taskForm')
     const taskInput = document.querySelector('#taskInput')
     const taskClear = document.querySelector('#taskClear')
+    const backArrow = document.querySelector('#backArrow')
 
     const toggleDarkMode = document.querySelector('#toggle-dark-mode')
     const toggleBlueMode = document.querySelector('#toggle-blue-mode')
@@ -63,7 +65,11 @@
                 }
             });
 
-
+    // this event listener is for the back button that only appears on mobile 
+    backArrow.addEventListener('click', () => {
+        todoContainer.style.display = "none";
+        leftColumn.style.display = "block";
+    });
 
     // we will be using local storage, this key will store the input data in the user's browser so when they
     // refresh the page it will still be up.
@@ -80,10 +86,16 @@
 
     // Adding an event listener to the entire container, so that anytime we click on a list it will become "active"
     listContainer.addEventListener('click', e => {
-        if (e.target.tagName.toLowerCase() === 'li')
+        if (e.target.tagName.toLowerCase() === 'li') {
         selectedListId = e.target.dataset.listId
+        }
+        if (screen.width < 768) {
+            todoContainer.style.display = "block";
+            leftColumn.style.display = "none";
+        }
         saveAndRender()
     })
+    
 
    // Here is the button function, it also the page from refreshing when
    // the button is clicked

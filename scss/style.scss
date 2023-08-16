@@ -148,3 +148,15 @@ $baseBorderRadius: 0;
 .red-mode .active {
     background-color: $red-secondary-highlight;
 }
+
+/////////////////////
+/// Media Queries ///
+/////////////////////
+
+@media (max-width: 768px) {
+    .col-right {
+      display: none;
+    }
+  }
+
+  

@@ -194,6 +194,12 @@ input, li, .list-group-item, .form-control {
   margin-top: 15px;
 }
 
+#backArrow {
+  font-size: 50px;
+  font-weight: bold;
+  display: none;
+}
+
 .dark-mode .form-check-input:checked {
   background-color: #9A30AE;
   border-color: #682075;
@@ -212,6 +218,10 @@ input, li, .list-group-item, .form-control {
 }
 
 .dark-mode h1 {
+  color: #fff;
+}
+
+.dark-mode #backArrow {
   color: #fff;
 }
 
@@ -241,6 +251,11 @@ input, li, .list-group-item, .form-control {
   color: red;
 }
 
+@media (max-width: 768px) {
+  #backArrow {
+    display: block;
+  }
+}
 * {
   border-radius: 0 !important;
 }
@@ -372,6 +387,12 @@ body {
 
 .red-mode .active {
   background-color: #B60E23;
+}
+
+@media (max-width: 768px) {
+  .col-right {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

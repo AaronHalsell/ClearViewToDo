@@ -38,7 +38,7 @@
            
             <div class="container-fluid">
               <div class="row">
-                <div class="col-4 col-left pt-3">
+                <div class="col-md-4 col-left pt-3 col-sm-12" id="leftColumn">
                   <!-- list of todo lists go here -->
                     <form id="new-list-form" class="input-group mb-3">
                       <input type="text" class="form-control list-form" placeholder="Enter List Name" aria-describedby="button-addon2" id="new-list-input">
@@ -48,12 +48,13 @@
                     </ul>
                 </div>
            
-                <div class="col-8 col-right pt-2" id="todoContainer">
+                <div class="col-md-8 col-right pt-2 col-sm-12" id="todoContainer">
+                    <i class="bi bi-arrow-left" id="backArrow"></i>
                   <!-- current todo list name goes here -->
-                  <div class="text-xl-center">
+                  <div class="text-center">
                     <h1 id="listTitle"></h1>
                   </div>
-                  <div class="col-xl-8 col-lg-12 mx-auto ">
+                  <div class="col-xl-8 col-lg-12 col-sm-6  mx-auto ">
                   <form id="taskForm" class="input-group mb-3">
                     <input id="taskInput" type="text" class="form-control task-form" placeholder="New Todo Item"  aria-describedby="button-addon2">
                     <button class="btn rounded-pill" type="submit" id="button-addon2">+</button>

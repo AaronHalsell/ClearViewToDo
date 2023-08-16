@@ -50,6 +50,12 @@
     margin-top: 15px;
 }
 
+#backArrow {
+    font-size: 50px;
+    font-weight: bold;
+    display: none;
+}
+
 /////////////////
 /// Dark Mode ///
 /////////////////
@@ -73,6 +79,10 @@
 }
 
 .dark-mode h1 {
+    color: $primary-bg-color;
+}
+
+.dark-mode #backArrow {
     color: $primary-bg-color;
 }
 
@@ -105,3 +115,15 @@
     background-color: $red-btn-primary;
     color: red;
 }
+
+
+/////////////////////
+/// Media Queries ///
+/////////////////////
+
+@media (max-width: 768px) {
+    #backArrow {
+        display: block;
+    }
+  }
+
